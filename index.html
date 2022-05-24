@@ -8,18 +8,29 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon"> 
 <link href="style.css" rel="stylesheet">
-<script defer src="app.js"></script>
+<section>
+    <head>
+    <div id="titulo">
+        <h1>Nombre de la obra</h1>
+    </div>
+</head>
+</section>  
 </head>
 <body>
-    <div class="conteiner">
-        <div id="text">text</div>
+    <section id="seccion">    
+    <div id="contenedor" class="container">
+        <div id="base">
+            <p id="text">Intrucciones: <br> Estás entrando a una obra que requiere de toda tu atención, ya que serás parte de la historia. Para adentrarte a ella deberás hacer uso del botón 'Siguiente' que te mostrará las indicaciones y te ayudará a seguir con la historia. Además, podrás observar el botón 'Terminar juego'; al presionarlo podrás salir de este. Te recomendamos que lo uses en caso de  una emergencias (aburrimiento, fatiga, etc.) siempre y cuando hayas acordado con el participante frente a ti previamenente. <br> Lo primero que deberás hacer es escoger qué participante quisieras interpretar (acuerdalo con la persona frente a tí). Una vez hecho esto, presiona el participante que escogiste y podrás empezar con la historia. <br> Ahora sí, que comience la función... </p>
+        </div>
         <div id="option-buttons" class="btn-grid">
-            <button class="btn">Option 1</button>
-            <button class="btn">Option 2</button>
-            <button class="btn">Option 3</button>
-            <button class="btn">Option 4</button>
+        <button id='participante1' class="btn">Participante 1</button>  
+        <button id='participante2' class="btn">Participante 2</button>            
         </div>
     </div>
+    </section>    
+    <script type='text/javascript' src="app.js"></script>
+    
 </body>
 </html>
