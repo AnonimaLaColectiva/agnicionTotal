@@ -1,6 +1,6 @@
 *, *::before, *::after {
     box-sizing: border-box; 
-    font-family: 'DotGothic16', sans-serif;
+    font-family: /*'DotGothic16'*/ sans-serif;
     color: wheat;
  }
  body {
