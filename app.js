@@ -185,6 +185,7 @@ let noGolpeada = function() {
     audio3.src = 'audios autoteatro/Audio-prueba-3-_autoteatro_.mp3'
     audioA.appendChild(audio3)
     audio3.play()
+    
     let continuandoConLaHistoria = function() {
         base.removeChild(reproduciendo)
         let pregunta = document.createElement('p')
