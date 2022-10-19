@@ -33,13 +33,13 @@ botonTerminarJuego.setAttribute('id', 'salir')
     botonTerminarJuego.innerText = 'Salir'
 let optionButtons = document.getElementById('option-buttons').appendChild(botonTerminarJuego)
 document.getElementById('salir').addEventListener('click', salir, true)
-let modEstiloSalir = document.getElementById('salir').style.color = 'black'
+let modEstiloSalir = document.getElementById('salir').style.color = 'white'
 let botonSiguiente = document.createElement('button')
 botonSiguiente.setAttribute('id', 'siguiente')
 botonSiguiente.innerText = 'Siguiente'
 optionButtons = document.getElementById('option-buttons').appendChild(botonSiguiente)
 document.getElementById('siguiente').addEventListener('click', siguiente, true)
-let modEstiloSiguiente = document.getElementById('siguiente').style.color = 'black'
+let modEstiloSiguiente = document.getElementById('siguiente').style.color = 'white'
 
 let btnGrid = document.getElementById('option-buttons')
 btnGrid.style.border = '1px'
@@ -78,12 +78,12 @@ let botonesSiYNo = function() {
     let botonSi = document.createElement('button')
     botonSi.setAttribute('id','si')
     botonSi.innerText = 'Sí'
-    botonSi.style.color = 'black'
+    botonSi.style.color = 'whithe'
     botonSi.addEventListener('click', golpeada)
     let botonNo = document.createElement('button')
     botonNo.setAttribute('id', 'no')
     botonNo.innerText = 'No'
-    botonNo.style.color = 'black'
+    botonNo.style.color = 'white'
     botonNo.addEventListener('click', noGolpeada)
     let optionButtons = document.getElementById('option-buttons')
     optionButtons.appendChild(botonSi)
@@ -118,7 +118,7 @@ let golpeada = function() {
         let botonTerminarJuego = document.createElement('button')
         botonTerminarJuego.setAttribute('id', 'salir')
         botonTerminarJuego.innerText = 'Salir'
-        botonTerminarJuego.style.color = 'black'              
+        botonTerminarJuego.style.color = 'white'              
         optionButtons.appendChild(botonTerminarJuego)
         const salir = function() {
             let optionButtons = document.getElementById('option-buttons')
@@ -133,7 +133,7 @@ let golpeada = function() {
         let nuevoSiguiente = document.createElement('button')
         nuevoSiguiente.setAttribute('id', 'siguiente1')
         nuevoSiguiente.innerText = 'Siguiente'
-        nuevoSiguiente.style.color = 'black'
+        nuevoSiguiente.style.color = 'white'
         optionButtons.appendChild(nuevoSiguiente)
         //el nuevo boton siguiente que lleva al audio 4 
         let siguiente1 = function() {
@@ -194,7 +194,7 @@ let noGolpeada = function() {
         let botonTerminarJuego = document.createElement('button')
         botonTerminarJuego.setAttribute('id', 'salir')
         botonTerminarJuego.innerText = 'Salir'
-        botonTerminarJuego.style.color = 'black'              
+        botonTerminarJuego.style.color = 'white'              
         optionButtons.appendChild(botonTerminarJuego)
         const salir = function() {
             let optionButtons = document.getElementById('option-buttons')
@@ -210,7 +210,7 @@ let noGolpeada = function() {
         let nuevoSiguiente = document.createElement('button')
         nuevoSiguiente.setAttribute('id', 'siguiente2')
         nuevoSiguiente.innerText = 'Siguiente'
-        nuevoSiguiente.style.color = 'black'
+        nuevoSiguiente.style.color = 'white'
         optionButtons.appendChild(nuevoSiguiente)
         let siguiente2 = function() {
         base.removeChild(pregunta)
@@ -268,12 +268,12 @@ const historia2 = function() {
     botonTerminarJuego.innerText = 'Salir'
     optionButtons.appendChild(botonTerminarJuego)
     botonTerminarJuego.addEventListener('click', salir, true)
-    botonTerminarJuego.style.color = 'black'
+    botonTerminarJuego.style.color = 'white'
     let botonSiguiente = document.createElement('button')
     botonSiguiente.setAttribute('id', 'siguiente')
     botonSiguiente.innerText = 'Siguiente'
     optionButtons.appendChild(botonSiguiente)
-    botonSiguiente.style.color = 'black'
+    botonSiguiente.style.color = 'white'
     botonSiguiente.addEventListener('click', siguienteParticipante2, true)
 }
 participanteDos.addEventListener('click', historia2)
@@ -305,12 +305,12 @@ const siguienteParticipante2 = function() {
         let botonSi = document.createElement('button')
         botonSi.setAttribute('id','si')
         botonSi.innerText = 'Sí'
-        botonSi.style.color = 'black'
+        botonSi.style.color = 'white'
         botonSi.addEventListener('click', golpeada2)
         let botonNo = document.createElement('button')
         botonNo.setAttribute('id', 'no')
         botonNo.innerText = 'No'
-        botonNo.style.color = 'black'
+        botonNo.style.color = 'white'
         botonNo.addEventListener('click', noGolpeada2)
         let optionButtons = document.getElementById('option-buttons')
         optionButtons.appendChild(botonSi)
@@ -350,7 +350,7 @@ const siguienteParticipante2 = function() {
             let botonTerminarJuego2 = document.createElement('button')
             botonTerminarJuego2.setAttribute('id', 'salir')
             botonTerminarJuego2.innerText = 'Salir'
-            botonTerminarJuego2.style.color = 'black'
+            botonTerminarJuego2.style.color = 'white'
             optionButtons.appendChild(botonTerminarJuego2)
             const salir2 = function() {
                 let optionButtons = document.getElementById('option-buttons')
@@ -366,7 +366,7 @@ const siguienteParticipante2 = function() {
             let nuevoSiguiente = document.createElement('button')
             nuevoSiguiente.setAttribute('id', 'siguienteB')
             nuevoSiguiente.innerText = 'Siguiente'
-            nuevoSiguiente.style.color = 'black'
+            nuevoSiguiente.style.color = 'white'
             optionButtons.appendChild(nuevoSiguiente)
             let siguienteB = function() {
                 base2.removeChild(pregunta2)
@@ -418,7 +418,7 @@ const siguienteParticipante2 = function() {
             let optionButtons = document.getElementById('option-buttons')
             let botonTerminarJuego2 = document.createElement('button')
             botonTerminarJuego2.innerText = 'Salir'
-            botonTerminarJuego2.style.color = 'black'
+            botonTerminarJuego2.style.color = 'white'
             optionButtons.appendChild(botonTerminarJuego2)
             const salir3 = function() {
                 let optionButtons = document.getElementById('option-buttons')
@@ -433,7 +433,7 @@ const siguienteParticipante2 = function() {
             let nuevoSiguiente = document.createElement('button')
             nuevoSiguiente.setAttribute('id', 'siguienteB2')
             nuevoSiguiente.innerText = 'Siguiente'
-            nuevoSiguiente.style.color = 'black'
+            nuevoSiguiente.style.color = 'white'
             optionButtons.appendChild(nuevoSiguiente)
             let siguienteB2 = function() {
                 base2.removeChild(pregunta2)
