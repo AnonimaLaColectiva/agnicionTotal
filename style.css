@@ -1,8 +1,64 @@
 *, *::before, *::after {
     box-sizing: border-box; 
     font-family: /*'DotGothic16'*/ sans-serif;
-    color: wheat;
+   
  }
+
+ body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #5f3c3c;
+    overflow-x: hidden;
+    height: 100%;
+    color: rgb(245, 235, 235);
+ }
+ h1{
+    text-align: center;
+ }
+ .container{
+    
+    display: flex;
+    border-radius: 52px;
+    background: #5f3c3c;
+    box-shadow: -23px 23px 46px #2c1c1c,
+    23px -23px 46px #925c5c;
+    flex-direction: column;
+    padding: 2rem;
+    position: relative;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 80%;
+    height: 35rem;
+    max-height: 35rem; 
+    left: 10%;
+    top: 2rem;  
+        
+ }
+.btn-grid{
+    display: flex;
+    gap: 20px;
+}
+ .btn {
+    
+    border-radius: 25px;
+    background: #5f3c3c;
+    box-shadow:  -5px 5px 10px #482e2e,
+             5px -5px 10px #764a4a;
+    border: none;
+    padding: 1rem ;
+    color: rgb(245, 235, 235);
+    outline: none;
+    width: 10rem;
+    height: 4rem;
+    overflow: auto;
+ }
+   
+ /*
  body {
      padding: 0;
      margin: 0;
@@ -15,7 +71,8 @@
  }
  
  .container {
-     width: 80%;
+    
+     width: 30%;
      max-width: 80%;
      height: 80%;
      max-height: 80%;
@@ -33,9 +90,11 @@
      text-align: justify;
      
  }
-
+*/
  @media (max-width: 800px) {
-    .container {
+    
+ }
+   /* .container {
       width: 80%;
       margin: 100px auto;
       padding: 35px;
@@ -57,6 +116,7 @@
      flex-wrap: wrap;
      /* padding: 20px 20px; */
      /* margin: 100px auto; */
+     /*
      justify-content: center;
      text-align: center;
  }
@@ -77,6 +137,7 @@
      margin: 100px auto;
      justify-content: center;
      text-align: center; */
+     /*
  }
  
  .btn:hover{
@@ -88,4 +149,4 @@
         position: relative;
         margin: auto;
      
-}
+ }*/
