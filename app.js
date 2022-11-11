@@ -63,7 +63,7 @@ let audioA = document.createElement('div')
 audioA.setAttribute('id', 'audioA')
 base.appendChild(audioA)
 audio1.setAttribute('id', 'audio1')
-audio1.src = 'audios autoteatro/Audio-prueba-1-_autoteatro_.mp3'
+audio1.src = 'audios/p1/'
 audioA.appendChild(audio1)
 audio1.play()
 let contenedor = document.getElementById('contenedor');
@@ -106,7 +106,7 @@ let golpeada = function() {
         optionButtons.removeChild(botonSi)
         optionButtons.removeChild(botonNo)
     let audioA = document.getElementById('audioA')
-    audio2.src = 'audios autoteatro/Audio-de-prueba-2-_autoteatro_.mp3'
+    audio2.src = 'audios/p1/'
     audioA.appendChild(audio2)
     audio2.play()
     let continuandoConLaHistoria = function() {
@@ -142,7 +142,7 @@ let golpeada = function() {
             reproduciendo.innerText = 'REPRODUCIENDO...'
             base.appendChild(reproduciendo)
             let audioA = document.getElementById('audioA')
-        audio4.src = 'audios autoteatro/audio-prueba-4_-autoteatro_.mp3'
+        audio4.src = 'audios/p1/'
         audioA.appendChild(audio4)
         audio4.play()
         let final = function() {
@@ -182,7 +182,7 @@ let noGolpeada = function() {
         optionButtons.removeChild(botonSi)
         optionButtons.removeChild(botonNo)
     let audioA = document.getElementById('audioA')
-    audio3.src = 'audios autoteatro/Audio-prueba-3-_autoteatro_.mp3'
+    audio3.src = 'audios/p1'
     audioA.appendChild(audio3)
     audio3.play()
     
@@ -220,7 +220,7 @@ let noGolpeada = function() {
         reproduciendo.innerText = 'REPRODUCIENDO...'
         base.appendChild(reproduciendo)
         let audioA = document.getElementById('audioA')
-        audio5.src = 'audios autoteatro/audio-de-prueba-5-_autoteatro_.mp3'
+        audio5.src = 'audios/p1'
         audioA.appendChild(audio5)
         audio5.play()
         let final = function() {
@@ -290,7 +290,7 @@ const siguienteParticipante2 = function() {
     let audioB = document.createElement('div')
     audioB.setAttribute('id', 'audioB')
     base2.appendChild(audioB)
-    audio6.src = 'participante 2/AUDIO-1A.mp3'
+    audio6.src = 'audios/p2'
     audioB.appendChild(audio6)
     audio6.play()
     let contenedor2 = document.getElementById('contenedor');
@@ -337,7 +337,7 @@ const siguienteParticipante2 = function() {
         optionButtons.removeChild(botonNo)
         //agregando audio 7 
         let audioB = document.getElementById('audioB')
-        audio7.src = 'participante 2/AUDIO-2A.mp3'
+        audio7.src = 'audios/p2'
         audioB.appendChild(audio7)
         audio7.play()
         //continuando con la historia agrega el audio 9 
@@ -375,7 +375,7 @@ const siguienteParticipante2 = function() {
                 reproduciendo.innerText = 'REPRODUCIENDO...'
                 base2.appendChild(reproduciendo)
                 let audioB = document.getElementById('audioB')
-                audio9.src = 'participante 2/AUDIO-3A.mp3'
+                audio9.src = 'audios/p2'
                 audioB.appendChild(audio9)
                 audio9.play()
                 let final2 = function() {
@@ -408,7 +408,7 @@ const siguienteParticipante2 = function() {
         optionButtons.removeChild(botonNo)
         let audioB = document.getElementById('audioB')
         //audio 8 y 10 
-        audio8.src = 'participante 2/AUDIO-4A.mp3'
+        audio8.src = 'audios/p2'
         audioB.appendChild(audio8)
         audio8.play()
         let continuandoConLaHistoria2 = function() {
@@ -443,7 +443,7 @@ const siguienteParticipante2 = function() {
                 reproduciendo.innerText = 'REPRODUCIENDO...'
                 base2.appendChild(reproduciendo)
                 let audioB = document.getElementById('audioB')
-                audio10.src = 'participante 2/AUDIO-5A.mp3'
+                audio10.src = 'audios/p2'
                 audioB.appendChild(audio10)
                 audio10.play()
                 let final2 = function() {
