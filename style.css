@@ -39,7 +39,7 @@
     flex-wrap: wrap;
     width: 40rem;
     /* max-width: 80%; */
-    height: 36rem;
+    height: max-content;
     /* max-height: 35rem;  */
     left: .5rem;
     top: 9rem;  
@@ -63,7 +63,7 @@
     height: 4rem;
     overflow: auto;
  }
-   #salir, #siguiente, #si, #no{
+   #salir, #siguiente, #siguiente1, #si, #no{
     border-radius: 25px;
     background: #5f3c3c;
     box-shadow:  -5px 5px 10px #482e2e,
@@ -75,9 +75,15 @@
     width: 10rem;
     height: 4rem;
     overflow: auto;
+    font-family: 'Trispace', sans-serif;
    }
    
-
+#nota{
+   display: flex;
+   font-size: small;
+   margin: auto;
+   padding: 2rem 1rem;
+}
  @media screen and (min-width: 667px) {
     body{
         overflow-x: hidden;
@@ -99,7 +105,7 @@
         flex-wrap: wrap;
         width: 35rem;
         /* max-width: 80%; */
-        height: 45rem;
+        height: max-content;
         max-height: auto;  
         left: .5rem;
         top: 1.5rem;
@@ -125,7 +131,7 @@
         overflow: auto;
         font-family: 'Trispace', sans-serif;
      }
-       #salir, #siguiente, #si, #no{
+       #salir, #siguiente, #siguiente1, #siguiente2, #si, #no{
         border-radius: 25px;
         background: #5f3c3c;
         box-shadow:  -5px 5px 10px #482e2e,

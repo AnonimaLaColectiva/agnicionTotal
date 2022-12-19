@@ -23,7 +23,7 @@ const historia1 = function() {
     base1.removeChild(indicaciones)
     let correo = document.createElement('p')
     correo.setAttribute('id', 'correo')
-    correo.innerText = 'Hola, \n me comunico contigo porque he encontrado tus datos en el bolso de una mujer. \n Andaba perdida por la zona, tenía la tez pálida, el cabello rapado y repetía tu nombre. Encontré, también, tu número de teléfono, no he podido localizarte porque la operadora dice que el número es inexistente. Ella me ha pedido que te entregue esta carta. Estaré en (direccion de la cafeteria).\n Te espero.'
+    correo.innerText = 'Hola, \n me comunico contigo porque he encontrado tus datos en el bolso de una mujer. \n Andaba perdida por la zona, tenía la tez pálida, el cabello rapado y repetía tu nombre. Encontré, también, tu número de teléfono, no he podido localizarte porque la operadora dice que el número es inexistente. Ella me ha pedido que te entregue esta carta. Estaré en Calle Bellavista 370, Miraflores 15074.\n Te espero.'
     base1.appendChild(correo)
 let contenedor = document.getElementById('contenedor');
 let borrarParticipanteUno = document.getElementById('option-buttons').removeChild(participanteUno) 
@@ -36,7 +36,7 @@ document.getElementById('salir').addEventListener('click', salir, true)
 let modEstiloSalir = document.getElementById('salir').style.color = 'white'
 let botonSiguiente = document.createElement('button')
 botonSiguiente.setAttribute('id', 'siguiente')
-botonSiguiente.innerText = 'Siguiente'
+botonSiguiente.innerText = 'Audio inmersivo'
 optionButtons = document.getElementById('option-buttons').appendChild(botonSiguiente)
 document.getElementById('siguiente').addEventListener('click', siguiente, true)
 let modEstiloSiguiente = document.getElementById('siguiente').style.color = 'white'
@@ -45,6 +45,12 @@ let btnGrid = document.getElementById('option-buttons')
 btnGrid.style.border = '1px'
 btnGrid.style.padding = '10px'
 
+let nota = document.createElement('p')
+nota.setAttribute('id', 'nota')
+nota.innerText = 'Asegurate que el otro participante esté listo para escuchar el audio. Apretar simultaneamente.'
+contenedor.appendChild(nota)
+
+
 }
 
 
@@ -52,6 +58,8 @@ participanteUno.addEventListener('click', historia1, true);
 
 //creating a 'next' button event and adding a div 
 const siguiente = function() {
+   let nota =  document.getElementById('nota')
+   
 const base = document.getElementById('base');
 let correo = document.getElementById('correo')
 base.removeChild(correo)
@@ -63,14 +71,15 @@ let audioA = document.createElement('div')
 audioA.setAttribute('id', 'audioA')
 base.appendChild(audioA)
 audio1.setAttribute('id', 'audio1')
-audio1.src = 'audios/p1/'
+audio1.src = 'audios/p1/ESTEBAN 1 AUDIO 1.mp3'
 audioA.appendChild(audio1)
 audio1.play()
 let contenedor = document.getElementById('contenedor');
+contenedor.removeChild(nota)
 let borrarBotonSalirYSiguiente = document.getElementById('option-buttons')
-let botonTerminarJuego = document.getElementById('salir')
+// let botonTerminarJuego = document.getElementById('salir')
 let botonSiguiente = document.getElementById('siguiente')
-borrarBotonSalirYSiguiente.removeChild(botonTerminarJuego)
+// borrarBotonSalirYSiguiente.removeChild(botonTerminarJuego)
 borrarBotonSalirYSiguiente.removeChild(botonSiguiente)
 let botonesSiYNo = function() {
     let reproduciendo = document.getElementById('reproduciendo')
@@ -106,13 +115,13 @@ let golpeada = function() {
         optionButtons.removeChild(botonSi)
         optionButtons.removeChild(botonNo)
     let audioA = document.getElementById('audioA')
-    audio2.src = 'audios/p1/'
+    audio2.src = 'audios/p1/ESTEBAN 1 AUDIO 2.mp3'
     audioA.appendChild(audio2)
     audio2.play()
     let continuandoConLaHistoria = function() {
         base.removeChild(reproduciendo)
         let pregunta = document.createElement('p')
-        pregunta.innerText = '¿Deseas continuar?'
+        pregunta.innerText = '¿Deseas continuar con la experiencia?'
         base.appendChild(pregunta)
         let optionButtons = document.getElementById('option-buttons')
         let botonTerminarJuego = document.createElement('button')
@@ -142,13 +151,13 @@ let golpeada = function() {
             reproduciendo.innerText = 'REPRODUCIENDO...'
             base.appendChild(reproduciendo)
             let audioA = document.getElementById('audioA')
-        audio4.src = 'audios/p1/'
+        audio4.src = 'audios/p1/ESTEBAN 1 AUDIO 4.mp3'
         audioA.appendChild(audio4)
         audio4.play()
         let final = function() {
             base.removeChild(reproduciendo)
             let optionButtons = document.getElementById('option-buttons')
-            optionButtons.removeChild(botonTerminarJuego)
+            // optionButtons.removeChild(botonTerminarJuego)
             optionButtons.removeChild(nuevoSiguiente)
             base.innerText = 'La función ha llegado a su fin.'
 
@@ -182,7 +191,7 @@ let noGolpeada = function() {
         optionButtons.removeChild(botonSi)
         optionButtons.removeChild(botonNo)
     let audioA = document.getElementById('audioA')
-    audio3.src = 'audios/p1'
+    audio3.src = 'audios/p1/ESTEBAN 1 AUDIO 3.mp3'
     audioA.appendChild(audio3)
     audio3.play()
     
@@ -220,13 +229,13 @@ let noGolpeada = function() {
         reproduciendo.innerText = 'REPRODUCIENDO...'
         base.appendChild(reproduciendo)
         let audioA = document.getElementById('audioA')
-        audio5.src = 'audios/p1'
+        audio5.src = 'audios/p1/ESTEBAN 1 AUDIO 4.mp3'
         audioA.appendChild(audio5)
         audio5.play()
         let final = function() {
             base.removeChild(reproduciendo)
             let optionButtons = document.getElementById('option-buttons')
-            optionButtons.removeChild(botonTerminarJuego)
+            // optionButtons.removeChild(botonTerminarJuego)
             optionButtons.removeChild(nuevoSiguiente)
             base.innerText = 'La función ha llegado a su fin.'
 
@@ -290,7 +299,7 @@ const siguienteParticipante2 = function() {
     let audioB = document.createElement('div')
     audioB.setAttribute('id', 'audioB')
     base2.appendChild(audioB)
-    audio6.src = 'audios/p2'
+    audio6.src = 'audios/p2/ESTEBAN PRIMA AUDIO 1.mp3'
     audioB.appendChild(audio6)
     audio6.play()
     let contenedor2 = document.getElementById('contenedor');
@@ -337,7 +346,7 @@ const siguienteParticipante2 = function() {
         optionButtons.removeChild(botonNo)
         //agregando audio 7 
         let audioB = document.getElementById('audioB')
-        audio7.src = 'audios/p2'
+        audio7.src = 'audios/p2/ESTEBAN PRIMA AUDIO 2.mp3'
         audioB.appendChild(audio7)
         audio7.play()
         //continuando con la historia agrega el audio 9 
@@ -375,13 +384,13 @@ const siguienteParticipante2 = function() {
                 reproduciendo.innerText = 'REPRODUCIENDO...'
                 base2.appendChild(reproduciendo)
                 let audioB = document.getElementById('audioB')
-                audio9.src = 'audios/p2'
+                audio9.src = 'audios/p2/ESTEBAN PRIMA AUDIO 4.mp3'
                 audioB.appendChild(audio9)
                 audio9.play()
                 let final2 = function() {
                     base2.removeChild(reproduciendo)
                     let optionButtons = document.getElementById('option-buttons')
-                    optionButtons.removeChild(botonTerminarJuego2)
+                    // optionButtons.removeChild(botonTerminarJuego2)
                     optionButtons.removeChild(nuevoSiguiente)
                     base2.innerText = 'La función ha llegado a su fin'
                 }
@@ -408,7 +417,7 @@ const siguienteParticipante2 = function() {
         optionButtons.removeChild(botonNo)
         let audioB = document.getElementById('audioB')
         //audio 8 y 10 
-        audio8.src = 'audios/p2'
+        audio8.src = 'audios/p2. ESTEBAN PRIMA AUDIO 3.mp3'
         audioB.appendChild(audio8)
         audio8.play()
         let continuandoConLaHistoria2 = function() {
@@ -443,13 +452,13 @@ const siguienteParticipante2 = function() {
                 reproduciendo.innerText = 'REPRODUCIENDO...'
                 base2.appendChild(reproduciendo)
                 let audioB = document.getElementById('audioB')
-                audio10.src = 'audios/p2'
+                audio10.src = 'audios/p2/ESTEBAN PRIMA AUDIO 4.mp3'
                 audioB.appendChild(audio10)
                 audio10.play()
                 let final2 = function() {
                     base2.removeChild(reproduciendo)
                     let optionButtons = document.getElementById('option-buttons')
-                    optionButtons.removeChild(botonTerminarJuego2)
+                    // optionButtons.removeChild(botonTerminarJuego2)
                     optionButtons.removeChild(nuevoSiguiente)
                     base2.innerText = 'La función ha llegado a su fin.'
                 }
