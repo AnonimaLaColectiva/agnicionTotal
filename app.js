@@ -281,14 +281,26 @@ const historia2 = function() {
     botonTerminarJuego.style.color = 'white'
     let botonSiguiente = document.createElement('button')
     botonSiguiente.setAttribute('id', 'siguiente')
-    botonSiguiente.innerText = 'Siguiente'
+    botonSiguiente.innerText = 'Audio inmersivo'
     optionButtons.appendChild(botonSiguiente)
     botonSiguiente.style.color = 'white'
+    let btnGrid = document.getElementById('option-buttons')
+btnGrid.style.border = '1px'
+btnGrid.style.padding = '10px'
+
+let nota = document.createElement('p')
+nota.setAttribute('id', 'nota')
+nota.innerText = 'Asegurate que el otro participante esté listo para escuchar el audio. Apretar simultaneamente.'
+contenedor.appendChild(nota)
     botonSiguiente.addEventListener('click', siguienteParticipante2, true)
 }
+
+
 participanteDos.addEventListener('click', historia2)
 //a next button even and adding a div to it 
 const siguienteParticipante2 = function() {
+    let nota =  document.getElementById('nota')
+
     let base2 = document.getElementById('base');
     let premisa = document.getElementById('premisa')
     base2.removeChild(premisa)
@@ -303,13 +315,15 @@ const siguienteParticipante2 = function() {
     audioB.appendChild(audio6)
     audio6.play()
     let contenedor2 = document.getElementById('contenedor');
+    contenedor2.removeChild(nota)
     let borrarBotonSalirYSiguiente = document.getElementById('option-buttons')
     let botonTerminarJuego2 = document.getElementById('salir')
     let botonSiguiente = document.getElementById('siguiente')
-    borrarBotonSalirYSiguiente.removeChild(botonTerminarJuego2)
+    //borrarBotonSalirYSiguiente.removeChild(botonTerminarJuego2)
     borrarBotonSalirYSiguiente.removeChild(botonSiguiente)
     //creando botones si y no
     let botonesSiYNo2 = function() {
+        borrarBotonSalirYSiguiente.removeChild(botonTerminarJuego2)
         let reproduciendoParticipante2 = document.getElementById('rep-2')
         reproduciendoParticipante2.innerText = 'Selecciona una opción...'
         let botonSi = document.createElement('button')
@@ -357,11 +371,11 @@ const siguienteParticipante2 = function() {
             base2.appendChild(pregunta2)
             let optionButtons = document.getElementById('option-buttons')
             //agregando botones de salir y siguiente
-            let botonTerminarJuego2 = document.createElement('button')
-            botonTerminarJuego2.setAttribute('id', 'salir')
-            botonTerminarJuego2.innerText = 'Salir'
-            botonTerminarJuego2.style.color = 'white'
-            optionButtons.appendChild(botonTerminarJuego2)
+            //let botonTerminarJuego2 = document.createElement('button')
+            //botonTerminarJuego2.setAttribute('id', 'salir')
+            //botonTerminarJuego2.innerText = 'Salir'
+            //botonTerminarJuego2.style.color = 'white'
+            //optionButtons.appendChild(botonTerminarJuego2)
             const salir2 = function() {
                 let optionButtons = document.getElementById('option-buttons')
                 let base2 = document.getElementById('base')
@@ -417,7 +431,7 @@ const siguienteParticipante2 = function() {
         optionButtons.removeChild(botonNo)
         let audioB = document.getElementById('audioB')
         //audio 8 y 10 
-        audio8.src = 'audios/p2. ESTEBAN PRIMA AUDIO 3.mp3'
+        audio8.src = 'audios/p2/ESTEBAN PRIMA AUDIO 3.mp3'
         audioB.appendChild(audio8)
         audio8.play()
         let continuandoConLaHistoria2 = function() {
@@ -426,16 +440,16 @@ const siguienteParticipante2 = function() {
             pregunta2.innerText = '¿Deseas continuar?'
             base2.appendChild(pregunta2)
             let optionButtons = document.getElementById('option-buttons')
-            let botonTerminarJuego2 = document.createElement('button')
-            botonTerminarJuego2.innerText = 'Salir'
-            botonTerminarJuego2.style.color = 'white'
-            optionButtons.appendChild(botonTerminarJuego2)
+            //let botonTerminarJuego2 = document.createElement('button')
+            //botonTerminarJuego2.innerText = 'Salir'
+            //botonTerminarJuego2.style.color = 'white'
+            //optionButtons.appendChild(botonTerminarJuego2)
             const salir3 = function() {
                 let optionButtons = document.getElementById('option-buttons')
                 let base2 = document.getElementById('base')
                 base2.innerHTML = '<p>Saliste de la experiencia :(</p>'
                 let botonTerminarJuego2 = document.getElementById('salir')
-                optionButtons.removeChild(botonTerminarJuego2)
+                // optionButtons.removeChild(botonTerminarJuego2)
                 let botonSiguiente = document.getElementById('siguienteB2')
                 optionButtons.removeChild(botonSiguiente)
             }
@@ -474,7 +488,7 @@ const ultimoSalir = function () {
     let optionButtons = document.getElementById('option-buttons')
     let base2 = document.getElementById('base')
     base2.innerHTML = '<p>Salite de la experiencia :(</p>'
-    let botonTerminarJuego2 = document('salir')
+    let botonTerminarJuego2 = document.getElementById('salir')
     optionButtons.removeChild(botonTerminarJuego2)
     let botonSiguiente = document.getElementById('siguiente')
     optionButtons.removeChild(botonSiguiente)
