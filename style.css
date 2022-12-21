@@ -23,7 +23,7 @@
     padding: 0 0 1rem 0;
  }
  #seccion{
-padding: 10rem;
+padding: auto;
 
  }
  .container{
@@ -34,7 +34,7 @@ padding: 10rem;
     box-shadow: -23px 23px 46px #2c1c1c,
     23px -23px 46px #925c5c;
     flex-direction: column;
-    padding: 3rem;
+    padding:2rem;
     position: relative;
     align-self: center;
     align-items: center;

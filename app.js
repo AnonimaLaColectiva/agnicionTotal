@@ -358,6 +358,10 @@ const siguienteParticipante2 = function() {
         let botonNo = document.getElementById('no')
         optionButtons.removeChild(botonSi)
         optionButtons.removeChild(botonNo)
+        let botonTerminarJuego2 = document.createElement('button')
+            botonTerminarJuego2.setAttribute('id', 'salir')
+            botonTerminarJuego2.innerText = 'Salir'
+            optionButtons.appendChild(botonTerminarJuego2)
         //agregando audio 7 
         let audioB = document.getElementById('audioB')
         audio7.src = 'audios/p2/ESTEBAN PRIMA AUDIO 2.mp3'
@@ -371,12 +375,13 @@ const siguienteParticipante2 = function() {
             base2.appendChild(pregunta2)
             let optionButtons = document.getElementById('option-buttons')
             //agregando botones de salir y siguiente
-            //let botonTerminarJuego2 = document.createElement('button')
-            //botonTerminarJuego2.setAttribute('id', 'salir')
-            //botonTerminarJuego2.innerText = 'Salir'
+            // let botonTerminarJuego2 = document.createElement('button')
+            // botonTerminarJuego2.setAttribute('id', 'salir')
+            // botonTerminarJuego2.innerText = 'Salir'
             //botonTerminarJuego2.style.color = 'white'
-            //optionButtons.appendChild(botonTerminarJuego2)
+            // optionButtons.appendChild(botonTerminarJuego2)
             const salir2 = function() {
+                 optionButtons.appendChild(botonTerminarJuego2)
                 let optionButtons = document.getElementById('option-buttons')
                 let base2 = document.getElementById('base')
                 base2.innerHTML = '<p>Saliste de la experiencia :(</p>'
