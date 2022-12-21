@@ -67,7 +67,7 @@ padding: auto;
     height: 4rem;
     overflow: auto;
  }
-   #salir, #siguiente, #siguiente1, #si, #no, #siguienteB, #siguienteB2{
+   #salir, #siguiente, #siguiente1, #siguiente2, #si, #no, #siguienteB, #siguienteB2{
     border-radius: 25px;
     background: #5f3c3c;
     box-shadow:  -5px 5px 10px #482e2e,

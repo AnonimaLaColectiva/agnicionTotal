@@ -77,11 +77,12 @@ audio1.play()
 let contenedor = document.getElementById('contenedor');
 contenedor.removeChild(nota)
 let borrarBotonSalirYSiguiente = document.getElementById('option-buttons')
-// let botonTerminarJuego = document.getElementById('salir')
+let botonTerminarJuego = document.getElementById('salir')
 let botonSiguiente = document.getElementById('siguiente')
 // borrarBotonSalirYSiguiente.removeChild(botonTerminarJuego)
 borrarBotonSalirYSiguiente.removeChild(botonSiguiente)
 let botonesSiYNo = function() {
+    borrarBotonSalirYSiguiente.removeChild(botonTerminarJuego)
     let reproduciendo = document.getElementById('reproduciendo')
     reproduciendo.innerText = 'Selecciona una opción...'
     let botonSi = document.createElement('button')
@@ -112,8 +113,13 @@ let golpeada = function() {
         let optionButtons = document.getElementById('option-buttons')
         let botonSi = document.getElementById('si')
         let botonNo = document.getElementById('no')
+        botonTerminarJuego.setAttribute('id', 'salir')
+        botonTerminarJuego.innerText = 'Salir'
+        botonTerminarJuego.style.color = 'white'              
+        optionButtons.appendChild(botonTerminarJuego)
         optionButtons.removeChild(botonSi)
         optionButtons.removeChild(botonNo)
+        
     let audioA = document.getElementById('audioA')
     audio2.src = 'audios/p1/ESTEBAN 1 AUDIO 2.mp3'
     audioA.appendChild(audio2)
@@ -125,10 +131,7 @@ let golpeada = function() {
         base.appendChild(pregunta)
         let optionButtons = document.getElementById('option-buttons')
         let botonTerminarJuego = document.createElement('button')
-        botonTerminarJuego.setAttribute('id', 'salir')
-        botonTerminarJuego.innerText = 'Salir'
-        botonTerminarJuego.style.color = 'white'              
-        optionButtons.appendChild(botonTerminarJuego)
+        
         const salir = function() {
             let optionButtons = document.getElementById('option-buttons')
             let base1 = document.getElementById('base')
