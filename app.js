@@ -127,7 +127,7 @@ let golpeada = function() {
     let continuandoConLaHistoria = function() {
         base.removeChild(reproduciendo)
         let pregunta = document.createElement('p')
-        pregunta.innerText = '¿Deseas continuar con la experiencia?'
+        pregunta.innerText = '¿Deseas continuar con la experiencia? \n asegurate que tu y el otro participante estén listos para continuar'
         base.appendChild(pregunta)
         let optionButtons = document.getElementById('option-buttons')
         let botonTerminarJuego = document.createElement('button')
@@ -201,7 +201,7 @@ let noGolpeada = function() {
     let continuandoConLaHistoria = function() {
         base.removeChild(reproduciendo)
         let pregunta = document.createElement('p')
-        pregunta.innerText = '¿Deseas continuar?'
+        pregunta.innerText = '¿Deseas continuar? \n asegurate que tu y el otro participante estén listos ara contunuar \n 3...2...1...'
         base.appendChild(pregunta)
         let optionButtons = document.getElementById('option-buttons')
         let botonTerminarJuego = document.createElement('button')
@@ -374,8 +374,9 @@ const siguienteParticipante2 = function() {
         let continuandoConLaHistoria2 = function() {
             base2.removeChild(reproduciendoParticipante2)
             let pregunta2 = document.createElement('p')
-            pregunta2.innerText = '¿Deseas continuar?'
+            pregunta2.innerText = '¿Deseas continuar? \n presiona continuar cuando tu y el otro particoante esten listos'
             base2.appendChild(pregunta2)
+
             let optionButtons = document.getElementById('option-buttons')
             //agregando botones de salir y siguiente
             // let botonTerminarJuego2 = document.createElement('button')
@@ -445,7 +446,7 @@ const siguienteParticipante2 = function() {
         let continuandoConLaHistoria2 = function() {
             base2.removeChild(reproduciendoParticipante2)
             let pregunta2 = document.createElement('p')
-            pregunta2.innerText = '¿Deseas continuar?'
+            pregunta2.innerText = '¿Deseas continuar? \n asegurate que tu y el otro participante estén listos para continuar \n 3...2...1'
             base2.appendChild(pregunta2)
             let optionButtons = document.getElementById('option-buttons')
             //let botonTerminarJuego2 = document.createElement('button')
