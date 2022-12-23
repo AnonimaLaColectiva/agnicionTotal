@@ -17,13 +17,13 @@ let audio10 = new Audio()
 
 
 const historia1 = function() {
-    alert('Has recibido un nuevo correo \n ¿Deseas leerlo?')
+    
     let base1 = document.getElementById('base');
     let indicaciones = document.getElementById('text')
     base1.removeChild(indicaciones)
     let correo = document.createElement('p')
     correo.setAttribute('id', 'correo')
-    correo.innerText = 'Hola, \n me comunico contigo porque he encontrado tus datos en el bolso de una mujer. \n Andaba perdida por la zona, tenía la tez pálida, el cabello rapado y repetía tu nombre. Encontré, también, tu número de teléfono, no he podido localizarte porque la operadora dice que el número es inexistente. Ella me ha pedido que te entregue esta carta. Estaré en Calle Bellavista 370, Miraflores 15074.\n Te espero.'
+    correo.innerText = 'Has recibido un nuevo mensaje: \n \n Hola, \n me comunico contigo porque he encontrado tus datos en el bolso de una mujer. \n Andaba perdida por la zona, tenía la tez pálida, el cabello rapado y repetía tu nombre. Encontré, también, tu número de teléfono, no he podido localizarte porque la operadora dice que el número es inexistente. Ella me ha pedido que te entregue esta carta. Estaré en Calle Bellavista 370, Miraflores 15074.\n Te espero.'
     base1.appendChild(correo)
 let contenedor = document.getElementById('contenedor');
 let borrarParticipanteUno = document.getElementById('option-buttons').removeChild(participanteUno) 
@@ -127,7 +127,7 @@ let golpeada = function() {
     let continuandoConLaHistoria = function() {
         base.removeChild(reproduciendo)
         let pregunta = document.createElement('p')
-        pregunta.innerText = '¿Deseas continuar con la experiencia? \n asegurate que tu y el otro participante estén listos para continuar'
+        pregunta.innerText = '¿Deseas continuar con la experiencia? \n asegurate que tú y el otro participante estén listos para continuar'
         base.appendChild(pregunta)
         let optionButtons = document.getElementById('option-buttons')
         let botonTerminarJuego = document.createElement('button')
@@ -201,7 +201,7 @@ let noGolpeada = function() {
     let continuandoConLaHistoria = function() {
         base.removeChild(reproduciendo)
         let pregunta = document.createElement('p')
-        pregunta.innerText = '¿Deseas continuar? \n asegurate que tu y el otro participante estén listos ara contunuar \n 3...2...1...'
+        pregunta.innerText = '¿Deseas continuar con la experiencia? \n asegurate que tú y el otro participante estén listos ara contunuar'
         base.appendChild(pregunta)
         let optionButtons = document.getElementById('option-buttons')
         let botonTerminarJuego = document.createElement('button')
@@ -374,7 +374,7 @@ const siguienteParticipante2 = function() {
         let continuandoConLaHistoria2 = function() {
             base2.removeChild(reproduciendoParticipante2)
             let pregunta2 = document.createElement('p')
-            pregunta2.innerText = '¿Deseas continuar? \n presiona continuar cuando tu y el otro particoante esten listos'
+            pregunta2.innerText = '¿Deseas continuar con la experiencia? \n presiona siguiente cuando tú y el otro participante estén listos'
             base2.appendChild(pregunta2)
 
             let optionButtons = document.getElementById('option-buttons')
@@ -446,7 +446,7 @@ const siguienteParticipante2 = function() {
         let continuandoConLaHistoria2 = function() {
             base2.removeChild(reproduciendoParticipante2)
             let pregunta2 = document.createElement('p')
-            pregunta2.innerText = '¿Deseas continuar? \n asegurate que tu y el otro participante estén listos para continuar \n 3...2...1'
+            pregunta2.innerText = '¿Deseas continuar con la experiencia? \n asegurate que tú y el otro participante estén listos para continuar'
             base2.appendChild(pregunta2)
             let optionButtons = document.getElementById('option-buttons')
             //let botonTerminarJuego2 = document.createElement('button')
