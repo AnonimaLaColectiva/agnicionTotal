@@ -47,7 +47,7 @@ btnGrid.style.padding = '10px'
 
 let nota = document.createElement('p')
 nota.setAttribute('id', 'nota')
-nota.innerText = 'Asegurate que el otro participante esté listo para escuchar el audio. Apretar simultaneamente.'
+nota.innerText = 'Asegúrate que el otro participante esté listo para escuchar el audio. Apretar simultáneamente.'
 contenedor.appendChild(nota)
 
 
@@ -127,7 +127,7 @@ let golpeada = function() {
     let continuandoConLaHistoria = function() {
         base.removeChild(reproduciendo)
         let pregunta = document.createElement('p')
-        pregunta.innerText = '¿Deseas continuar con la experiencia? \n asegurate que tú y el otro participante estén listos para continuar'
+        pregunta.innerText = '¿Deseas continuar con la experiencia? \n asegúrate que tú y el otro participante estén listos para continuar'
         base.appendChild(pregunta)
         let optionButtons = document.getElementById('option-buttons')
         let botonTerminarJuego = document.createElement('button')
@@ -201,7 +201,7 @@ let noGolpeada = function() {
     let continuandoConLaHistoria = function() {
         base.removeChild(reproduciendo)
         let pregunta = document.createElement('p')
-        pregunta.innerText = '¿Deseas continuar con la experiencia? \n asegurate que tú y el otro participante estén listos ara contunuar'
+        pregunta.innerText = '¿Deseas continuar con la experiencia? \n asegúrate que tú y el otro participante estén listos ara contunuar'
         base.appendChild(pregunta)
         let optionButtons = document.getElementById('option-buttons')
         let botonTerminarJuego = document.createElement('button')
@@ -446,7 +446,7 @@ const siguienteParticipante2 = function() {
         let continuandoConLaHistoria2 = function() {
             base2.removeChild(reproduciendoParticipante2)
             let pregunta2 = document.createElement('p')
-            pregunta2.innerText = '¿Deseas continuar con la experiencia? \n asegurate que tú y el otro participante estén listos para continuar'
+            pregunta2.innerText = '¿Deseas continuar con la experiencia? \n asegúrate que tú y el otro participante estén listos para continuar'
             base2.appendChild(pregunta2)
             let optionButtons = document.getElementById('option-buttons')
             //let botonTerminarJuego2 = document.createElement('button')
