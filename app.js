@@ -84,7 +84,7 @@ borrarBotonSalirYSiguiente.removeChild(botonSiguiente)
 let botonesSiYNo = function() {
     borrarBotonSalirYSiguiente.removeChild(botonTerminarJuego)
     let reproduciendo = document.getElementById('reproduciendo')
-    reproduciendo.innerText = 'Selecciona una opción...'
+    reproduciendo.innerText = '¿Deseas golpearla?'
     let botonSi = document.createElement('button')
     botonSi.setAttribute('id','si')
     botonSi.innerText = 'Sí'
@@ -127,7 +127,7 @@ let golpeada = function() {
     let continuandoConLaHistoria = function() {
         base.removeChild(reproduciendo)
         let pregunta = document.createElement('p')
-        pregunta.innerText = '¿Deseas continuar con la experiencia? \n asegúrate que tú y el otro participante estén listos para continuar'
+        pregunta.innerText = '¿Deseas continuar con la experiencia? \n \n Asegúrate que tú y el otro participante estén listos para continuar'
         base.appendChild(pregunta)
         let optionButtons = document.getElementById('option-buttons')
         let botonTerminarJuego = document.createElement('button')
@@ -162,7 +162,7 @@ let golpeada = function() {
             let optionButtons = document.getElementById('option-buttons')
             // optionButtons.removeChild(botonTerminarJuego)
             optionButtons.removeChild(nuevoSiguiente)
-            base.innerText = 'La función ha llegado a su fin.'
+            base2.innerHTML = '<h4>La función ha llegado a su fin.</h4> <p>Quisieramos agradecer a todas las personas que han formado parte de este proyecto</p> <ul><li>Esteban: Christian Mora</li> <li>Voz indicadora: Mayra Carbajal</li><li>Mujer: Alessandra Rivas</li><li>Voz en la cafetería: Favio Rojas</li> <li>Dirección: Alessandra Rivas</li> <li>Asistente de dirección: Mayra Carbajal</li><li>Creación colectiva a cargo de: Alessandra Rivas, Favio Rojas, Mayra Carbajal y Renzo Rospigliosi</li> <li>Dramaturgia: Mayra Carbajal</li> <li>Diseño sonoro: Favio Rojas</li> <li>Diseño gráfico: Andrés Canchan</li> <li>Programación web: Mayra Carbajal</li></ul> <br> <br> <p>Gracias por formar parte de Agnición total, puedes salir de la página. </p>'
 
         }
         audio4.addEventListener('ended', final)
@@ -201,7 +201,7 @@ let noGolpeada = function() {
     let continuandoConLaHistoria = function() {
         base.removeChild(reproduciendo)
         let pregunta = document.createElement('p')
-        pregunta.innerText = '¿Deseas continuar con la experiencia? \n asegúrate que tú y el otro participante estén listos ara contunuar'
+        pregunta.innerText = '¿Deseas continuar con la experiencia? \n \n Asegúrate que tú y el otro participante estén listos ara contunuar'
         base.appendChild(pregunta)
         let optionButtons = document.getElementById('option-buttons')
         let botonTerminarJuego = document.createElement('button')
@@ -240,7 +240,7 @@ let noGolpeada = function() {
             let optionButtons = document.getElementById('option-buttons')
             // optionButtons.removeChild(botonTerminarJuego)
             optionButtons.removeChild(nuevoSiguiente)
-            base.innerText = 'La función ha llegado a su fin.'
+            base2.innerHTML = '<h4>La función ha llegado a su fin.</h4> <p>Quisieramos agradecer a todas las personas que han formado parte de este proyecto</p> <ul><li>Esteban: Christian Mora</li> <li>Voz indicadora: Mayra Carbajal</li><li>Mujer: Alessandra Rivas</li><li>Voz en la cafetería: Favio Rojas</li> <li>Dirección: Alessandra Rivas</li> <li>Asistente de dirección: Mayra Carbajal</li><li>Creación colectiva a cargo de: Alessandra Rivas, Favio Rojas, Mayra Carbajal y Renzo Rospigliosi</li> <li>Dramaturgia: Mayra Carbajal</li> <li>Diseño sonoro: Favio Rojas</li> <li>Diseño gráfico: Andrés Canchan</li> <li>Programación web: Mayra Carbajal</li></ul> <br> <br> <p>Gracias por formar parte de Agnición total, puedes salir de la página. </p> <br> <br> '
 
         }
         audio5.addEventListener('ended', final)
@@ -328,7 +328,7 @@ const siguienteParticipante2 = function() {
     let botonesSiYNo2 = function() {
         borrarBotonSalirYSiguiente.removeChild(botonTerminarJuego2)
         let reproduciendoParticipante2 = document.getElementById('rep-2')
-        reproduciendoParticipante2.innerText = 'Selecciona una opción...'
+        reproduciendoParticipante2.innerText = '¿Deseas golpearla?'
         let botonSi = document.createElement('button')
         botonSi.setAttribute('id','si')
         botonSi.innerText = 'Sí'
@@ -374,7 +374,7 @@ const siguienteParticipante2 = function() {
         let continuandoConLaHistoria2 = function() {
             base2.removeChild(reproduciendoParticipante2)
             let pregunta2 = document.createElement('p')
-            pregunta2.innerText = '¿Deseas continuar con la experiencia? \n presiona siguiente cuando tú y el otro participante estén listos'
+            pregunta2.innerText = '¿Deseas continuar con la experiencia? \n \n Presiona siguiente cuando tú y el otro participante estén listos'
             base2.appendChild(pregunta2)
 
             let optionButtons = document.getElementById('option-buttons')
@@ -415,7 +415,7 @@ const siguienteParticipante2 = function() {
                     let optionButtons = document.getElementById('option-buttons')
                     // optionButtons.removeChild(botonTerminarJuego2)
                     optionButtons.removeChild(nuevoSiguiente)
-                    base2.innerText = 'La función ha llegado a su fin'
+                    base2.innerHTML = '<h4>La función ha llegado a su fin.</h4> <p>Quisieramos agradecer a todas las personas que han formado parte de este proyecto</p> <ul><li>Esteban: Christian Mora</li> <li>Voz indicadora: Mayra Carbajal</li><li>Mujer: Alessandra Rivas</li><li>Voz en la cafetería: Favio Rojas</li> <li>Dirección: Alessandra Rivas</li> <li>Asistente de dirección: Mayra Carbajal</li><li>Creación colectiva a cargo de: Alessandra Rivas, Favio Rojas, Mayra Carbajal y Renzo Rospigliosi</li> <li>Dramaturgia: Mayra Carbajal</li> <li>Diseño sonoro: Favio Rojas</li> <li>Diseño gráfico: Andrés Canchan</li> <li>Programación web: Mayra Carbajal</li></ul> <br> <br> <p>Gracias por formar parte de Agnición total, puedes salir de la página. </p> <br> <br> '
                 }
                 audio9.addEventListener('ended', final2)
             }
@@ -446,7 +446,7 @@ const siguienteParticipante2 = function() {
         let continuandoConLaHistoria2 = function() {
             base2.removeChild(reproduciendoParticipante2)
             let pregunta2 = document.createElement('p')
-            pregunta2.innerText = '¿Deseas continuar con la experiencia? \n asegúrate que tú y el otro participante estén listos para continuar'
+            pregunta2.innerText = '¿Deseas continuar con la experiencia? \n Asegúrate que tú y el otro participante estén listos para continuar'
             base2.appendChild(pregunta2)
             let optionButtons = document.getElementById('option-buttons')
             //let botonTerminarJuego2 = document.createElement('button')
@@ -483,7 +483,7 @@ const siguienteParticipante2 = function() {
                     let optionButtons = document.getElementById('option-buttons')
                     // optionButtons.removeChild(botonTerminarJuego2)
                     optionButtons.removeChild(nuevoSiguiente)
-                    base2.innerText = 'La función ha llegado a su fin.'
+                    base2.innerHTML = '<h4>La función ha llegado a su fin.</h4> <p>Quisieramos agradecer a todas las personas que han formado parte de este proyecto</p> <ul><li>Esteban: Christian Mora</li> <li>Voz indicadora: Mayra Carbajal</li><li>Mujer: Alessandra Rivas</li><li>Voz en la cafetería: Favio Rojas</li> <li>Dirección: Alessandra Rivas</li> <li>Asistente de dirección: Mayra Carbajal</li><li>Creación colectiva a cargo de: Alessandra Rivas, Favio Rojas, Mayra Carbajal y Renzo Rospigliosi</li> <li>Dramaturgia: Mayra Carbajal</li> <li>Diseño sonoro: Favio Rojas</li> <li>Diseño gráfico: Andrés Canchan</li> <li>Programación web: Mayra Carbajal</li></ul> <br> <br> <p>Gracias por formar parte de Agnición total, puedes salir de la página. </p> <br> <br> '
                 }
                 audio10.addEventListener('ended', final2)
             }
